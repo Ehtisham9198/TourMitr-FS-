@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar{
+  font-family:sans-serif;
+  color:aliceblue;
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  border-bottom: 0.5px solid gray !important;
+  font-weight: 300 !important;
+  background-color:rgb(62, 72, 77);
+}
+.footer{
+  color: rgb(252, 249, 249);
+  padding: 10px;
+  background:linear-gradient(to right,rgb(62, 72, 77),rgb(65, 65, 64));
+  text-align: center;
+
+}
+.footer a:hover{
+  border-bottom: 2px solid white;
+}
+.Not{
+  font-size: 130px;
+  font-weight: 500;
+  text-align: center;
+}
+.Go{
+  border: 2px solid rgb(224, 140, 140);
+  border-radius: 15px;
+  padding: 5px;
+  text-align: center !important;
+  font-weight: 500;
+  background-color:rgb(216, 147, 57); 
+  box-shadow: 0 2px 5px;
+}
+.Go:hover{
+  background-color: rgb(243, 200, 148);
+}
