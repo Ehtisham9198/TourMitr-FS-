@@ -18,9 +18,13 @@ ConnectDB();
 app.use(cors());
 app.use(express.json());
 
-// Routes
+
 app.use('/api/v1/auth', authRoutes);
 
+app.use(express.static('./frontend/build'));
+app.get('*',(req,res)=>{
+  res.sendFile(path.resolve(__dirname,"fronend","build","index.html"))
+});
 
 const PORT = process.env.PORT || 8080;
 

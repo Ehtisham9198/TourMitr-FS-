@@ -3,11 +3,18 @@
   "version": "1.0.0",
   "description": "E-Commerce",
   "main": "server.js",
+  "engines": {
+    "node": "16.20.2"
+  },
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
     "frontend": "npm start --prefix ./frontend",
-    "dev": "concurrently \"npm run server \" \"npm run frontend\""
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:azure": "react-scripts build"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
@@ -28,6 +35,9 @@
     "react-hot-toast": "^2.4.1",
     "react-toastify": "^10.0.5",
     "toaster": "^0.1.2",
-    "token": "^0.1.0"
+    "token": "^0.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
   }
 }
