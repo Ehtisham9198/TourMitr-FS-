@@ -1,0 +1,34 @@
+.con h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.con{
+    margin-left: 230px;
+    margin-top:150px;
+    width: 400px;
+}
+.ecomimage{
+   right:15%;
+   top: 17%;
+   position: absolute;
+}
+
+@media only screen and (max-width: 1200px) {
+    .con { 
+        margin-top: 50px;
+        width: 320px;
+        right: 20% ;
+        position: absolute;
+    }
+    .con h1{
+        margin-bottom: 20px;
+    }
+    .ecomimage {
+        top: auto;
+        margin-top: 20px;
+        right: 0;
+
+    }
+
+}

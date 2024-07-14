@@ -1,0 +1,31 @@
+.main {
+    margin: 10% auto; /* This will center the div horizontally */
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 250px;
+    width: 350px;
+}
+
+.main h1{
+    font-size: 28px;
+    box-shadow: 0 2px 5px white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+.main h3{
+    padding-top: 10px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(231, 231, 216);
+}
+.sec{
+    font-weight: 700;
+    font-size: 20px;
+}

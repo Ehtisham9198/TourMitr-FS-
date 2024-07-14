@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  font-family: sans-serif;
+  color: aliceblue;
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  border-bottom: 0.5px solid gray !important;
+  font-weight: 300 !important;
+  background-color: rgb(62, 72, 77);
+}
+
+.footer {
+  color: rgb(252, 249, 249);
+  padding: 10px;
+  background: linear-gradient(to right, rgb(62, 72, 77), rgb(65, 65, 64));
+  text-align: center;
+}
+
+.footer a:hover {
+  border-bottom: 2px solid white;
+}
+
+.Not {
+  font-size: 130px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.Go {
+  border: 2px solid rgb(224, 140, 140);
+  border-radius: 15px;
+  padding: 5px;
+  text-align: center !important;
+  font-weight: 500;
+  background-color: rgb(216, 147, 57);
+  box-shadow: 0 2px 5px;
+}
+
+.Go:hover {
+  background-color: rgb(243, 200, 148);
+}
+
+.brand .logo-text {
+  font-family: 'Pacifico', cursive; 
+  color: #fbbf24; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.links .nav-link {
+  color: #e2e8f0;
+  transition: color 0.3s ease;
+}
+
+.links .nav-link:hover {
+  color: #fbbf24; 
+}
+
+.category {
+  cursor: pointer;
+  background: rgb(245, 246, 193);
+  color: rgb(10, 10, 10);
+  padding: 3px 3px;
+  border: none;
+  font-size: small;
+  font-weight: 500;
+  border-radius: 5px;
+  flex: 1 0 20%; /* Allows three buttons in a row */
+  text-align: center;
+}
+
+.category.selected {
+  background: rgb(239, 244, 140);
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+/* Styles for the recommendation page */
+.recommendation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  background: #c4e6eb; /* Light blue background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00796b; /* Dark teal color */
+  margin-bottom: 20px;
+}
+
+.recommend-button {
+  padding: 10px 20px;
+  background-color: #1d2732;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.recommend-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.recommendation-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+
+}
+
+.recommendation-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.recommendation-item:hover {
+  transform: translateY(-2px);
+}
+
+.recommendation-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  color: #6947ff; /* Tomato color */
+}
