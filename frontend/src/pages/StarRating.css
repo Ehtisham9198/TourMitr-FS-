@@ -1,0 +1,28 @@
+.star-rating {
+  display: flex;
+  align-items: center; /* Aligns items vertically centered */
+  direction: ltr; /* Left-to-right text direction */
+}
+
+.star-rating p {
+  margin: 0 10px 0 0; /* Adds some space between the text and stars */
+  font-size: 1.5em; /* Adjust font size as needed */
+}
+
+.star-rating button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.star-rating .on .star {
+  color: gold;
+}
+
+.star-rating .off .star {
+  color: grey;
+}
+
+.star {
+  font-size: 2em;
+}
