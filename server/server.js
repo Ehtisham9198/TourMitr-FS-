@@ -1,13 +1,13 @@
 // server.js
-const env = require('dotenv').config();
 const express = require('express');
 const colors = require('colors');
 const ConnectDB = require('./config/Dbconnect');
+const env = require('dotenv');
 const authRoutes = require('./routes/authRoutes');
 const cors = require('cors');
 
-
 const app = express();
+env.config();
 ConnectDB();
 
 app.use(cors());
