@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/auth';
+import toast from 'react-hot-toast';
 
 const LocationDropdown = () => {
   const [location, setLocation] = useState('');
   const navigate = useNavigate();
-
+  const [auth, setAuth] = useAuth();
   const handleSelection = (event) => {
+   const user =  localStorage.getItem('auth');
+   if(!user)   toast.error('Please Login');
+    else{
     setLocation(event.target.value);
     if (event.target.value) {
       navigate(`/location/${event.target.value.toLowerCase()}`);
-    }
+    }}
   };
 
   return (

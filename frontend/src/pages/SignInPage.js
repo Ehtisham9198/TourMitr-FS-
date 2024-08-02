@@ -6,13 +6,14 @@ import { useAuth } from '../context/auth';
 import Layout from '../components/Layout';
 import LocationPage from './LocationPage';
 import Register from './Register';
+import StarRating from './StarRating';
 
 const SignIn = () => {
   const emailInput = useRef();
   const passwordInput = useRef();
   const [loading, setLoading] = useState(false);
   const [auth, setAuth] = useAuth();
-  const [userId, setUserId] = useState(null);
+  const [userId, setUserId] = useState("");
   const navigate = useNavigate();
   const [signUp, setSignUp] = useState(false);
 
@@ -40,7 +41,8 @@ const SignIn = () => {
           user: responseData.user,
         });
 
-        // setUserId(responseData.user.email ); 
+        // setUserId(responseData.user.email);
+        // console.log(responseData.user.email) 
         localStorage.setItem('auth', JSON.stringify(responseData));
         navigate('/');
       } else {
@@ -93,10 +95,7 @@ const SignIn = () => {
           </p>
         </div>
       </div>
-      {/* Pass userId to LocationPage as soon as it is available */}
-      {userId && <LocationPage userId={userId} />}
-   
-    </Layout>
+    </Layout> 
       )
     }
   </div>

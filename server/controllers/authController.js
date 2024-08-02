@@ -2,15 +2,11 @@ const { hashPassword, comparePassword } = require('../helper/authHelper');
 const UserModel = require('../models/userModel');
 const Rating = require('../models/RatingModel');
 const { OpenAIClient, AzureKeyCredential } = require("@azure/openai");
-const AZURE_OPENAI_ENDPOINT = "https://tourismlocal.openai.azure.com/";
-const AZURE_OPENAI_API_KEY = "e41c88740e9d40f9aec7da9a1953f746";
-const modelDeployment = "TourMitr";
-
+const  modelDeployment = "TourMitr";
 
 
 const registerController = async (req, res) => {
   try {
-    console.log(req.body);
     const { name, email, password, contact, address,interests } = req.body;
 
     const existingUser = await UserModel.findOne({ email });
@@ -78,19 +74,14 @@ const loginController = async (req, res) => {
     });
   }
 };
-// userid ref issue
+
+
 const ratingController = async (req, res) => {
   try {
     const { userId, placeId, rating } = req.body;
 
-    // Check for missing fields
     if (!userId || !placeId || rating == null) {
       return res.status(400).json({ success: false, message: 'Missing required fields' });
-    }
-
-    // Validate rating
-    if (typeof rating !== 'number' || rating < 1 || rating > 5) {
-      return res.status(400).json({ success: false, message: 'Invalid rating value' });
     }
 
     let userRating = await Rating.findOne({ userId, placeId });
@@ -137,8 +128,8 @@ const ratingController = async (req, res) => {
   
     try {
       const client = new OpenAIClient(
-        AZURE_OPENAI_ENDPOINT,
-        new AzureKeyCredential(AZURE_OPENAI_API_KEY)
+        process.env.AZURE_OPENAI_ENDPOINT,
+        new AzureKeyCredential(process.env.AZURE_OPENAI_API_KEY)
       );
   
       const promptTemplate = `

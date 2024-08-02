@@ -87,48 +87,48 @@ const locationData = {
     name: "Bhubaneswar",
     description: "Bhubaneswar, the capital city of Odisha, is famously known as the 'City of Temples.' It boasts a rich historical and cultural heritage, with numerous ancient temples, monuments, and modern attractions.",
     places: [
-      { name: "Khandagiri Caves", description: "Khandagiri Caves are ancient rock-cut caves that date back to the 2nd century BCE. These caves were carved by Jain monks and are known for their historical and archaeological significance.", image: image, id: 0, category: "Historical" },
-      { name: "Deras Dam", description: "Deras Dam is a serene picnic spot surrounded by lush greenery and tranquil waters. It is an ideal place for nature lovers and those looking to escape the hustle and bustle of the city.", image: deras, id: 1, category: "Nature" },
-      { name: "Biju Patnaik Park", description: "Named after the former Chief Minister of Odisha, Biju Patnaik Park is a popular urban park offering well-maintained gardens, walking paths, and recreational facilities.", image: biju, id: 2, category: "Park" },
-      { name: "Dhauli Stupa", description: "Dhauli Stupa, also known as Shanti Stupa, is a significant Buddhist monument located on the banks of the Daya River. It marks the site where Emperor Ashoka is believed to have embraced Buddhism after the Kalinga War.", image: Dhauli, id: 3, category: "Historical" },
-      { name: "Sanaghagra Waterfall", description: "Sanaghagra Waterfall is a picturesque waterfall located in the Keonjhar district, near Bhubaneswar. It is a popular destination for trekking, picnics, and nature photography.", image: sana, id: 4, category: "Nature" },
-      { name: "Lingaraj Temple", description: "Lingaraj Temple is one of the oldest and most revered temples in Bhubaneswar, dedicated to Lord Shiva. This architectural marvel attracts devotees and tourists alike for its intricate carvings and spiritual significance.", image: Lingraj, id: 5, category: "Religious" }
+      { name: "Khandagiri Caves", description: "Khandagiri Caves are ancient rock-cut caves that date back to the 2nd century BCE. These caves were carved by Jain monks and are known for their historical and archaeological significance.", image: image, Id: -1, category: "Historical" },
+      { name: "Deras Dam", description: "Deras Dam is a serene picnic spot surrounded by lush greenery and tranquil waters. It is an ideal place for nature lovers and those looking to escape the hustle and bustle of the city.", image: deras, Id: 1, category: "Nature" },
+      { name: "Biju Patnaik Park", description: "Named after the former Chief Minister of Odisha, Biju Patnaik Park is a popular urban park offering well-maintained gardens, walking paths, and recreational facilities.", image: biju, Id: 2, category: "Park" },
+      { name: "Dhauli Stupa", description: "Dhauli Stupa, also known as Shanti Stupa, is a significant Buddhist monument located on the banks of the Daya River. It marks the site where Emperor Ashoka is believed to have embraced Buddhism after the Kalinga War.", image: Dhauli, Id: 3, category: "Historical" },
+      { name: "Sanaghagra Waterfall", description: "Sanaghagra Waterfall is a picturesque waterfall located in the Keonjhar district, near Bhubaneswar. It is a popular destination for trekking, picnics, and nature photography.", image: sana, Id: 4, category: "Nature" },
+      { name: "Lingaraj Temple", description: "Lingaraj Temple is one of the oldest and most revered temples in Bhubaneswar, dedicated to Lord Shiva. This architectural marvel attracts devotees and tourists alike for its intricate carvings and spiritual significance.", image: Lingraj, Id: 5, category: "Religious" }
     ]
   },
   lucknow: {
     name: "Lucknow",
     description: "Lucknow, the capital city of Uttar Pradesh, is renowned for its rich cultural heritage, historic monuments, and vibrant arts scene. Known as the 'City of Nawabs,' it offers a unique blend of traditional and modern influences.",
     places: [
-      { name: "Bara Imambara", description: "Bara Imambara, an architectural marvel built in 1784, is known for its central hall which is one of the largest arched constructions without support beams in the world.", image: bada, id: 6, category: "Historical" },
-      { name: "Dr. Bhimrao Ambedkar Memorial Park", description: "This vast public park is dedicated to Dr. Bhimrao Ambedkar and other social reformers. It features grand statues, manicured lawns, and impressive architecture, making it a popular spot for visitors.", image: ambedkar, id: 7, category: "Park" },
-      { name: "The Residency", description: "The Residency is a historic landmark that served as a refuge for British inhabitants during the Siege of Lucknow in 1857. Today, it stands as a poignant reminder of the Indian Rebellion and features extensive ruins and a museum.", image: residency, id: 8, category: "Historical" },
-      { name: "Janeshwar Mishra Park", description: "One of the largest parks in Asia, Janeshwar Mishra Park offers lush green landscapes, lakes, and recreational facilities. It's an ideal spot for relaxation and outdoor activities.", image: janeswar, id: 9, category: "Park" },
-      { name: "Nawab Wajid Ali Shah Zoological Garden", description: "Commonly known as Lucknow Zoo, this zoological garden houses a wide variety of animals and birds. It also features a toy train, a vintage train exhibit, and a butterfly park.", image: zoo, id: 10, category: "Zoo" },
-      { name: "Rumi Darwaza", description: "An iconic symbol of Lucknow, the Rumi Darwaza is a magnificent gateway built in the 18th century. It stands 60 feet tall and exemplifies the Awadhi architectural style.", image: rumi, id: 11, category: "Historical" }
+      { name: "Bara Imambara", description: "Bara Imambara, an architectural marvel built in 1784, is known for its central hall which is one of the largest arched constructions without support beams in the world.", image: bada, Id: 6, category: "Historical" },
+      { name: "Dr. Bhimrao Ambedkar Memorial Park", description: "This vast public park is dedicated to Dr. Bhimrao Ambedkar and other social reformers. It features grand statues, manicured lawns, and impressive architecture, making it a popular spot for visitors.", image: ambedkar, Id: 7, category: "Park" },
+      { name: "The Residency", description: "The Residency is a historic landmark that served as a refuge for British inhabitants during the Siege of Lucknow in 1857. Today, it stands as a poignant reminder of the Indian Rebellion and features extensive ruins and a museum.", image: residency, Id: 8, category: "Historical" },
+      { name: "Janeshwar Mishra Park", description: "One of the largest parks in Asia, Janeshwar Mishra Park offers lush green landscapes, lakes, and recreational facilities. It's an ideal spot for relaxation and outdoor activities.", image: janeswar, Id: 9, category: "Park" },
+      { name: "Nawab Wajid Ali Shah Zoological Garden", description: "Commonly known as Lucknow Zoo, this zoological garden houses a wide variety of animals and birds. It also features a toy train, a vintage train exhibit, and a butterfly park.", image: zoo, Id: 10, category: "Zoo" },
+      { name: "Rumi Darwaza", description: "An iconic symbol of Lucknow, the Rumi Darwaza is a magnificent gateway built in the 18th century. It stands 60 feet tall and exemplifies the Awadhi architectural style.", image: rumi, Id: 11, category: "Historical" }
     ]
   },
   agra: {
     name: "Agra",
     description: "Agra, located in Uttar Pradesh, is world-renowned for its iconic monuments and rich Mughal heritage. Known for the Taj Mahal, Agra is a city that blends history, architecture, and culture.",
     places: [
-      { name: "Taj Mahal", description: "The Taj Mahal, a UNESCO World Heritage Site, is an ivory-white marble mausoleum built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal. It is considered one of the most beautiful buildings in the world.", image: tajmahal, id: 12, category: "Historical" },
-      { name: "Agra Fort", description: "Agra Fort, also a UNESCO World Heritage Site, is a massive red sandstone fort that served as the main residence of the Mughal emperors. It houses several impressive buildings within its walls.", image: agrafort, id: 13, category: "Historical" },
-      { name: "Fatehpur Sikri", description: "Fatehpur Sikri is a historic city founded by Emperor Akbar in 1571. It is known for its stunning architecture and includes notable structures like Buland Darwaza and Jama Masjid.", image: fatehpur, id: 14, category: "Historical" },
-      { name: "Itmad-ud-Daula", description: "Often referred to as the 'Baby Taj,' Itmad-ud-Daula is a beautiful Mughal mausoleum built for Mirza Ghiyas Beg. Its intricate marble work is considered a precursor to the Taj Mahal.", image: itmad, id: 15, category: "Historical" },
-      { name: "Mehtab Bagh", description: "Mehtab Bagh is a charbagh complex located across the Yamuna River from the Taj Mahal. It offers a stunning view of the Taj and is known for its lush gardens and serene environment.", image: mehtab, id: 16, category: "Nature" },
-      { name: "Akbar's Tomb", description: "Akbar's Tomb is the resting place of the Mughal Emperor Akbar. Located in Sikandra, this architectural marvel blends Hindu and Muslim designs and is set within a large garden.", image: akbarstomb, id: 17, category: "Historical" }
+      { name: "Taj Mahal", description: "The Taj Mahal, a UNESCO World Heritage Site, is an ivory-white marble mausoleum built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal. It is considered one of the most beautiful buildings in the world.", image: tajmahal, Id: 12, category: "Historical" },
+      { name: "Agra Fort", description: "Agra Fort, also a UNESCO World Heritage Site, is a massive red sandstone fort that served as the main residence of the Mughal emperors. It houses several impressive buildings within its walls.", image: agrafort, Id: 13, category: "Historical" },
+      { name: "Fatehpur Sikri", description: "Fatehpur Sikri is a historic city founded by Emperor Akbar in 1571. It is known for its stunning architecture and includes notable structures like Buland Darwaza and Jama Masjid.", image: fatehpur, Id: 14, category: "Historical" },
+      { name: "Itmad-ud-Daula", description: "Often referred to as the 'Baby Taj,' Itmad-ud-Daula is a beautiful Mughal mausoleum built for Mirza Ghiyas Beg. Its intricate marble work is considered a precursor to the Taj Mahal.", image: itmad, Id: 15, category: "Historical" },
+      { name: "Mehtab Bagh", description: "Mehtab Bagh is a charbagh complex located across the Yamuna River from the Taj Mahal. It offers a stunning view of the Taj and is known for its lush gardens and serene environment.", image: mehtab, Id: 16, category: "Nature" },
+      { name: "Akbar's Tomb", description: "Akbar's Tomb is the resting place of the Mughal Emperor Akbar. Located in Sikandra, this architectural marvel blends Hindu and Muslim designs and is set within a large garden.", image: akbarstomb, Id: 17, category: "Historical" }
     ]
   },
   jaipur: {
     name: "Jaipur",
     description: "Jaipur, the capital city of Rajasthan, is known as the 'Pink City' due to its distinctly colored buildings. It is famous for its majestic palaces, forts, and vibrant culture.",
     places: [
-      { name: "Hawa Mahal", description: "Hawa Mahal, also known as the Palace of Winds, is an iconic landmark in Jaipur. It features a unique five-story facade with 953 small windows, allowing breeze to pass through and keep the palace cool.", image: hawaMahal, id: 18, category: "Historical" },
-      { name: "Amber Fort", description: "Amber Fort is a magnificent fort located on a hilltop overlooking Jaipur. It is known for its artistic Hindu style elements, intricate mirror work, and stunning views.", image: amberFort, id: 19, category: "Historical" },
-      { name: "City Palace", description: "The City Palace is a grand complex in the heart of Jaipur, which includes the Chandra Mahal and Mubarak Mahal palaces. It is a blend of Mughal and Rajput architecture and houses a museum.", image: citypalace, id: 20, category: "Historical" },
-      { name: "Jantar Mantar", description: "Jantar Mantar in Jaipur is a UNESCO World Heritage Site and one of the largest observatories ever built. It features a collection of nineteen architectural astronomical instruments.", image: jantarMantar, id: 21, category: "Historical" },
-      { name: "Jal Mahal", description: "Jal Mahal, or the Water Palace, is a stunning palace located in the middle of the Man Sagar Lake. It is known for its exquisite architecture and scenic surroundings.", image: jalMahal, id: 22, category: "Historical" },
-      { name: "Nahargarh Fort", description: "Nahargarh Fort offers panoramic views of Jaipur and is part of the trio of forts along with Amber and Jaigarh. It was originally built as a retreat for the royal family.", image: nahargarhfort, id: 23, category: "Historical" }
+      { name: "Hawa Mahal", description: "Hawa Mahal, also known as the Palace of Winds, is an iconic landmark in Jaipur. It features a unique five-story facade with 953 small windows, allowing breeze to pass through and keep the palace cool.", image: hawaMahal, Id: 18, category: "Historical" },
+      { name: "Amber Fort", description: "Amber Fort is a magnificent fort located on a hilltop overlooking Jaipur. It is known for its artistic Hindu style elements, intricate mirror work, and stunning views.", image: amberFort, Id: 19, category: "Historical" },
+      { name: "City Palace", description: "The City Palace is a grand complex in the heart of Jaipur, which includes the Chandra Mahal and Mubarak Mahal palaces. It is a blend of Mughal and Rajput architecture and houses a museum.", image: citypalace, Id: 20, category: "Historical" },
+      { name: "Jantar Mantar", description: "Jantar Mantar in Jaipur is a UNESCO World Heritage Site and one of the largest observatories ever built. It features a collection of nineteen architectural astronomical instruments.", image: jantarMantar, Id: 21, category: "Historical" },
+      { name: "Jal Mahal", description: "Jal Mahal, or the Water Palace, is a stunning palace located in the middle of the Man Sagar Lake. It is known for its exquisite architecture and scenic surroundings.", image: jalMahal, Id: 22, category: "Historical" },
+      { name: "Nahargarh Fort", description: "Nahargarh Fort offers panoramic views of Jaipur and is part of the trio of forts along with Amber and Jaigarh. It was originally built as a retreat for the royal family.", image: nahargarhfort, Id: 23, category: "Historical" }
     ]
   },
     delhi: {
@@ -210,10 +210,10 @@ const locationData = {
     }  
 
 };
-const LocationPage = (userId) => {
+const LocationPage = () => {
   const { location } = useParams();
-
   const [data, setData] = useState(null);
+  const [auth, setAuth] = useAuth();
 
   useEffect(() => {
     if (locationData[location]) {
@@ -245,7 +245,7 @@ const LocationPage = (userId) => {
               )}
               <div>
                 <h3 className="text-xl font-semibold mb-2">{place.name}</h3>
-                <StarRating userId={userId} placeId={place.Id} />
+                <StarRating placeId={place.Id} userId={auth.user.email} />
                 <p>{place.description}</p>
               </div>
             </div>

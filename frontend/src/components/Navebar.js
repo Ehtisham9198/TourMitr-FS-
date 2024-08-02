@@ -18,10 +18,9 @@ const Header = () => {
         </div>
         <div className='links'>
 
-          {auth.user && <NavLink to='/rec' className='me-3 nav-link'>Find your place</NavLink>}
-          <NavLink to='/' className='me-3 nav-link'>Home</NavLink>
-          {!auth.user && <NavLink to='/login' className='me-3 nav-link'>Login</NavLink>}
-          {!auth.user && <NavLink to='/register' className='me-3 nav-link'>Register</NavLink>}
+          {auth.user && <NavLink to='/rec' className='me-3 nav-link font-bold'>Get Places</NavLink>}
+          {!auth.user && <NavLink to='/login' className='me-3 nav-link font-bold '>Login</NavLink>}
+          {!auth.user && <NavLink to='/register' className='me-3 nav-link font-bold '>Register</NavLink>}
           {auth.user && <NavLink to='/login' onClick={LOGOUT} className='me-3 nav-link'>Logout</NavLink>}
         </div>
       </div>
