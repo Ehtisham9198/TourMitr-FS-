@@ -25,7 +25,7 @@ const SignIn = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch('/api/v1/auth/login', {
+      const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/v1/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

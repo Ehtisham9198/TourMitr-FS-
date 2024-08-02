@@ -9,7 +9,7 @@ const StarRating = ({ userId, placeId}) => {
   const [auth, setAuth] = useAuth();
   const fetchAverageRating = async () => {
     try {
-      const response = await fetch(`/api/v1/auth/rating/${placeId}`);
+      const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/v1/auth/rating/${placeId}`);
       if (response.ok) {
         const data = await response.json();
         setAverageRating(data.averageRating);
