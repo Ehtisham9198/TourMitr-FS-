@@ -26,7 +26,7 @@ const RecommendationPage = () => {
     }
 
     try {
-      const response = await fetch('/api/v1/auth/recommendations', {
+      const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/v1/auth/recommendations`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

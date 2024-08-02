@@ -5,11 +5,10 @@ WORKDIR /app
 COPY package.json ./
 RUN npm install
 
-COPY client/ client/
-COPY index.js ./
+COPY . .
 
 USER node
 
 CMD [ "npm", "start" ]
 
-EXPOSE 8081
+EXPOSE 80
